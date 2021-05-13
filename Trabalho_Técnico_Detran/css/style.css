@@ -1,0 +1,60 @@
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-image:url(../img/bh5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    height: 100vh;
+}
+form{
+    background-color: white;
+    max-width: 700px;
+    width: 70%;
+    height: 450px;
+    padding: 20px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    border-radius: 10px;
+
+}
+
+
+.text{
+    width: 100%;
+    height: 40px;
+    border: 1px solid blue;
+    padding-left: 10px;
+    margin: 10px 0 ;
+    border-radius: 10px;
+    outline: none;
+}
+.submit{
+    width: 100%;
+    height: 40px;
+    cursor:pointer;
+    background: rgb(91, 20, 206);
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    transition: 1s;
+}
+.submit:hover{
+    background-color: teal;
+}
+body main div{
+    margin-top: 10px;
+}
+
+ main img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
