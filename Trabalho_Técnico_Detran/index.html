@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+
+<body>
+    <main>
+        <label>Entre com a velocidade max. permitida na via</label><input type="text" id="txtvelmax">
+        <br>
+        <label>Entre com a velocidade do carro</label><input type="text" id="txtvelcarro">
+        <br>
+        <input type="button" value="Resultado" onclick="detran()">
+        <div id="resultado"></div>
+
+        <script>
+
+
+            function detran() {
+
+                var max = parseInt(document.getElementById("txtvelmax").value)
+                var velcarro = parseInt(document.getElementById("txtvelcarro").value)
+                var adv = max + 7;
+                var leve = max * 1.2
+                var media = max * 1.5
+                if (velcarro> max && velcarro<=adv ){
+                    document.getElementById("resultado").innerHTML="<p> Velocidade permitida dentro da via"
+                }
+                    else if (velcarro>adv && velcarro < leve) {
+                    
+                    document.getElementById("resultado").innerHTML = "<p> Advertência - Acima de 7km/h - Infração LEVE 3 pontos na carteira e multa de R$ 88,38"
+                }
+                else if (velcarro === leve) {
+                
+                    document.getElementById("resultado").innerHTML="<p> Autuado.Infração MÉDIA 4 pontos na carteira e multa de R$ 130,16"
+                }
+                else if (velcarro > leve && velcarro <= media) {
+                 
+                    document.getElementById("resultado").innerHTML="<p> Autuado.Infração GRAVE 5 pontos na carteira e multa de R$ 195,23" 
+                }
+                else if (velcarro > media) {
+                    document.getElementById("resultado").innerHTML="<p> Autuado.Infração gravissima.Penalidade de suspesão do direito de dirigir. 7 pontos na carteira e multa de R$293,47"
+                }
+                else{
+                    document.getElementById("resultado").innerHTML="<p> Velocidade permitida dentro da via"
+                }
+
+            }
+        </script>
+    </main>
+</body>
+
+</html>
