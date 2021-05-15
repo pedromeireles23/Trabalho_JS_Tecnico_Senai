@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script src="js/script.js"></script>
     <main>
         <img src="img/LogoPCMGdetran-transp.png" alt="logodetran" class="logo">
         <form>
@@ -17,18 +18,25 @@
             <br>
             <label>Entre com a velocidade do carro</label><input type="text" id="txtvelcarro" class="text">
             <br>
-            <input type="button" value="Resultado" onclick="detran()" class="submit">
+            <input type="button" value="Resultado" onclick="detran()" class="submit2">
             <br>
             <div id="resultado"></div>
-            <br>
-            <label>Nome do motorista:</label><input type="text" id="txtnome" class="text">
-            <br>
-            <label>Número da habilitação:</label><input type="text" id="txtnumero" class="text">
-            <br>
-            <input type="submit" value="Imprimir">
-            <script src="js/script.js"></script>
+            <scrip>
+            <div>
+                <button onclick="mudarnome()" class="submit" name="botaotxt" id="nome5"> Trocar pontuação </button>
+            </div>
+            </scrip>
+            <div>
+                <div class="tentativa">
+
+                </div>
+                <input type="button" value="Imprimir" onclick="capturar()" class="submit">
+                <div id="tentativa2">
+                </div>
+            </div>
         </form>
     </main>
+
 </body>
 
 </html>

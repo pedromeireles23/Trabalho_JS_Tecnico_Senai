@@ -1,5 +1,5 @@
 function detran() {
-
+    event.preventDefault();
     var max = parseInt(document.getElementById("txtvelmax").value)
     var velcarro = parseInt(document.getElementById("txtvelcarro").value)
     var adv = max + 7;
@@ -31,6 +31,38 @@ function detran() {
     else{
         document.getElementById("resultado").innerHTML="<p> Velocidade permitida dentro da via"
         document.getElementById("resultado").style.color ="green"
+    } 
+}       
+    function mudarnome(){
+        event.preventDefault();
+        let tentativa2 = document.querySelector(".tentativa")
+        tentativa2.innerHTML+= 
+        '<br><label>Mudar nome do motorista:</label><input type="text" class="text" id ="nome1"><br><label>Mudar o número de habilitação:</label><input type="text" class="text" id="numero1">'
+        let form = document.querySelector("form")
+        form.style.height="640px";
+        document.getElementById("nome5").disabled=true;
+        }
+        
+    function capturar(){
+        let form = document.querySelector("form")
+        form.style.height="640px";
+        let tentativa2 = document.getElementById("resultado").innerText;
+        //tentativa2.innerHTML+="TESTE"
+        console.log(tentativa2);
+        let tentativa3 = document.getElementById("resultado").innerHTML;
+        console.log(tentativa3)
+        document.getElementById("tentativa2").innerHTML = document.getElementById("resultado").innerText;
+        let capturando2 = document.getElementById("nome1").value
+        document.getElementById("tentativa2").innerHTML+= " A multa irá para o condutor "+capturando2
+        let capturando = document.getElementById("numero1").value
+        document.getElementById("tentativa2").innerHTML+= " com numero de habilitação " +capturando;
+    
+
+        //comentário 
+        //capturar4= (document.getElementById('nome1').value);
+        //capturar5= parseInt(document.getElementById('numero1').value);
+        //document.getElementById(".tentativa2").innerHTML+='<br><label>Mudar nome do motorista:</label><input type="text" class="text" id ="nome1"><br><label>Mudar o número de habilitação:</label><input type="text" class="text" id="numero1">'
+        
+
     }
 
-}
