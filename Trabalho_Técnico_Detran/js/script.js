@@ -32,6 +32,10 @@ function detran() {
         document.getElementById("resultado").innerHTML = "<p> Velocidade permitida dentro da via"
         document.getElementById("resultado").style.color = "green"
     }
+    else if (velcarro == max){
+        document.getElementById("resultado").innerHTML = "<p> Velocidade permitida dentro da via"
+        document.getElementById("resultado").style.color = "green"
+    }
     else {
         document.getElementById("resultado").innerHTML = "<p> Por favor, entre com um valor"
         document.getElementById("resultado").style.color = "green"
@@ -74,7 +78,7 @@ function capturar() {
         document.getElementById("tentativa2").innerHTML += " A multa irá para o condutor " + capturando2
         document.getElementById("tentativa2").innerHTML += " com numero de habilitação " + capturando;   
      }
-     
+    
     //comentário 
     //capturar4= (document.getElementById('nome1').value);
     //capturar5= parseInt(document.getElementById('numero1').value);
