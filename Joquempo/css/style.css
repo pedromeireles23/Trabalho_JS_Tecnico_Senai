@@ -107,6 +107,7 @@ div.flex img:nth-child(3):hover{
     background-color: #5058D4;
     border-radius: 8px;
     border-style: solid;
+    border-color: black;
     position: absolute;
     top: 75%;
     left: 46%;

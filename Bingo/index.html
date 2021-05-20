@@ -9,8 +9,8 @@
     <title>Bingo</title>
 </head>
 
-<body>
-    <div id="tabela">
+<body onload="gerarCartela()">
+    <div class="container">
         <table class="bingo">
             <tr>
                 <th class="cor">B</th>
@@ -55,6 +55,10 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+    </div>
+    <div class="btn-field">
+        <button class="btn-gerar" onclick="gerarCartela()">Gerar nova cartela</button>
+        <button class="btn-gerar" onclick="sortearPedra()">sortear pedra</button>
     </div>
     <script src="js/script.js"></script>
 </body>
