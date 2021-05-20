@@ -90,3 +90,13 @@ function joquempo(escolha){
        }
     
 }
+// Resetando os pontos
+function reset(){
+    let botao = document.getElementById('reset');
+    let tentativa1 = document.getElementById('jogadorpontoss')
+    let tentativa2 =document.getElementById('computadorpontoss')
+    if(jogadorpontos && computadorpontos >0){
+        tentativa1.textContent=0;
+        tentativa2.textContent=0;
+    }
+}

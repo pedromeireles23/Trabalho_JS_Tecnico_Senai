@@ -103,5 +103,19 @@ div.flex img:nth-child(3):hover{
     margin-top: 150px;
     font-size: 40px;
 }
+#reset{
+    background-color: #5058D4;
+    border-radius: 8px;
+    border-style: solid;
+    position: absolute;
+    top: 75%;
+    left: 46%;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+
+}
 
 
